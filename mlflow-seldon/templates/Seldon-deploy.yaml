@@ -1,0 +1,39 @@
+apiVersion: machinelearning.seldon.io/v1alpha2
+kind: SeldonDeployment
+metadata:
+  name: {{ include "mlflow-seldon.fullname" . }}
+  labels:
+    {{- include "mlflow-seldon.labels" . | nindent 4 }}
+spec:
+  name: {{ include "mlflow-seldon.fullname" . }}
+  predictors:
+  - componentSpecs:
+    - spec:
+        containers:
+        - name: classifier
+          livenessProbe:
+            initialDelaySeconds: 800
+            failureThreshold: 20000000
+            periodSeconds: 25
+            successThreshold: 1
+            httpGet:
+              path: /health/ping
+              port: http
+              scheme: HTTP
+          readinessProbe:
+            initialDelaySeconds: 800
+            failureThreshold: 2000000
+            periodSeconds: 25
+            successThreshold: 1
+            httpGet:
+              path: /health/ping
+              port: http
+              scheme: HTTP
+    graph:
+      children: []
+      implementation: MLFLOW_SERVER
+      modelUri: {{ .Values.seldon.mlflowmodelpath }}
+      name: classifier
+      serviceAccountName:  {{ include "mlflow-seldon.serviceAccountName" . }}
+    name: default
+    replicas: {{ .Values.replicaCount }}

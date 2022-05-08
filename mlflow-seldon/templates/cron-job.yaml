@@ -1,0 +1,27 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: {{ include "mlflow-seldon.fullname" . }}-hook
+spec:
+  schedule: "* * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          serviceAccountName: {{ include "mlflow-seldon.serviceAccountName" . }}
+          containers:
+          - name: mlflow-hook
+            image: "{{ .Values.hook.image.repository }}:{{ .Values.hook.image.tag | default .Chart.AppVersion }}"
+            imagePullPolicy: IfNotPresent
+            env:
+            - name: MLFLOW_TRACKING_URI
+              value: {{ .Values.hook.MLFLOW_TRACKING_URI }}
+            - name: MLFLOW_MODEL_NAME
+              value: {{ .Values.hook.MLFLOW_MODEL_NAME }}
+            - name: MLFLOW_STAGE
+              value: {{ .Values.hook.MLFLOW_STAGE }}
+            - name: MLFLOW_DEPLOY_NAME
+              value: {{ include "mlflow-seldon.fullname" . }}
+            - name: DEPLOY_NAMESPACE
+              value: {{ .Values.hook.DEPLOY_NAMESPACE }}
+          restartPolicy: Never
