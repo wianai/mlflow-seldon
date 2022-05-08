@@ -50,8 +50,7 @@ This Helm Chart deploys seldon deployment along with mlflow cron job to track ch
 ## :sparkles: Features ##
 
 :heavy_check_mark: Automated Deployment from Mlflow to Seldon
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+
 
 ## :rocket: Technologies ##
 
