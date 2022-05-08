@@ -92,6 +92,36 @@ $ helm install mlflow-seldon  ./mlflow-seldon
 
 ## :checkered_flag: To Deploy New Version With Mlflow ##
 
+Transition The version of Model in Mlflow UI
+
+
+<img width="1404" alt="Screenshot 2022-05-08 at 2 19 10 PM" src="https://user-images.githubusercontent.com/62284209/167296179-3411891e-19c1-46e1-9c80-643b8a52eccf.png">
+
+---
+Cron Job Picks up and Patches the Changes to Seldon Core
+
+
+<img width="914" alt="Screenshot 2022-05-08 at 2 20 27 PM" src="https://user-images.githubusercontent.com/62284209/167296195-afbbf844-bb0d-43f5-a25e-30b4c514bfa6.png">
+
+---
+## :checkered_flag: How The flow Works
+
+<img width="1169" alt="Screenshot 2022-05-08 at 2 24 45 PM" src="https://user-images.githubusercontent.com/62284209/167296234-28e754ed-b17e-4afd-9da2-f7c877860375.png">
+
+## Values
+
+| Key | Type | Default | Description |
+|-----|------|---------|-------------|
+| ambassador.enabled | bool | `true` |  |
+| ambassador.singleNamespace | bool | `false` |  |
+| certManager.enabled | bool | `false` |  |
+| controllerId | string | `""` |  |
+| crd.annotations | object | `{}` |  |
+| crd.create | bool | `true` |  |
+| crd.forceV1 | bool | `false` |  |
+| crd.forceV1beta1 | bool | `false` |  |
+| credentials.gcs.gcsCredentialFileName | string | `"gcloud-application-credentials.json"` |  |
+
 
 ## :memo: License ##
 
