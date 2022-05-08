@@ -1,7 +1,16 @@
 apiVersion: v2
 name: mlflow-seldon
-description: A Helm chart for Kubernetes
+description: Helm Chart for mlfloe seldon promotion
+keywords:
+- mlflow
+- kubernetes
+- machine-learning
+- mlops
+- seldon-core
 
+sources:
+- https://github.com/HelloMLOps
+- https://github.com/HelloMLOps/mlflow-seldon-demo
 # A chart can be either an 'application' or a 'library' chart.
 #
 # Application charts are a collection of templates that can be packaged into versioned archives
