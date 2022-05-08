@@ -86,6 +86,12 @@ $ cd hellopmlops
 # Install Helm chart
 $ helm install mlflow-seldon  ./mlflow-seldon
 
+#     or
+
+$ helm repo add HelloMLOps https://HelloMLOps.github.io/helm-charts
+
+$ helm install mlflow-seldon HelloMLOps/mlflow-seldon
+
 ```
 
 ## :airplane: To Deploy New Version With Mlflow ##
