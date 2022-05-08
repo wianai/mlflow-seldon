@@ -1,9 +1,8 @@
 <div align="center" id="top"> 
-  <img src="./.github/app.gif" alt="Hellopmlops" />
+  <img src="https://miro.medium.com/max/1400/0*UXWYFAW_ovWGuR2P.jpeg" alt="Hellopmlops"  width="200" height="100" />
 
   &#xa0;
 
-  <!-- <a href="https://hellopmlops.netlify.app">Demo</a> -->
 </div>
 
 <h1 align="center">Hellopmlops Seldon Mlflow</h1>
