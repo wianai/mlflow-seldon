@@ -112,16 +112,11 @@ Cron Job Picks up and Patches the Changes to Seldon Core
 
 | Key | Type | Default | Description |
 |-----|------|---------|-------------|
-| ambassador.enabled | bool | `true` |  |
-| ambassador.singleNamespace | bool | `false` |  |
-| certManager.enabled | bool | `false` |  |
-| controllerId | string | `""` |  |
-| crd.annotations | object | `{}` |  |
-| crd.create | bool | `true` |  |
-| crd.forceV1 | bool | `false` |  |
-| crd.forceV1beta1 | bool | `false` |  |
-| credentials.gcs.gcsCredentialFileName | string | `"gcloud-application-credentials.json"` |  |
-
+| seldon.mlflowmodelpath |  string | `""` | Initial Mlflow Model Path |
+| hook.MLFLOW_TRACKING_URI | string | `"http://mlflow-service.mlflow.svc.cluster.local:5000"` | Mlflow URI |
+| hook.MLFLOW_STAGE | string | `"Production"` | Stage To be Tracked From Mlflow  |
+| hook.DEPLOY_NAMESPACE | string | `"default"` | Model Namespace |
+| hook.MLFLOW_MODEL_NAME | string | `""` | Model Name |
 
 ## :memo: License ##
 
