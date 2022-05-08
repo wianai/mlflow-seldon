@@ -1,6 +1,6 @@
 apiVersion: v2
 name: mlflow-seldon
-description: Helm Chart for mlfloe seldon promotion
+description: Helm Chart for mlflow seldon promotion
 keywords:
 - mlflow
 - kubernetes
