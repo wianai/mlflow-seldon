@@ -1,32 +1,32 @@
 <div align="center" id="top"> 
-  <img src="https://miro.medium.com/max/1400/0*UXWYFAW_ovWGuR2P.jpeg" alt="Hellopmlops"  width="200" height="100" />
+  <img src="https://miro.medium.com/max/1400/0*UXWYFAW_ovWGuR2P.jpeg" alt="Hellmlops"  width="200" height="100" />
 
   &#xa0;
 
 </div>
 
-<h1 align="center">Hellopmlops Seldon Mlflow</h1>
+<h1 align="center">Hellmlops Seldon Mlflow</h1>
 
 <p align="center">
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/hellopmlops/mlflow-seldon-demo?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/Hellmlops/mlflow-seldon-demo?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/hellopmlops/mlflow-seldon-demo?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/Hellmlops/mlflow-seldon-demo?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/hellopmlops/mlflow-seldon-demo?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Hellmlops/mlflow-seldon-demo?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/hellopmlops/mlflow-seldon-demo?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/Hellmlops/mlflow-seldon-demo?color=56BEB8">
 
-  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{YOUR_GITHUB_USERNAME}}/hellopmlops?color=56BEB8" /> -->
+  <!-- <img alt="Github issues" src="https://img.shields.io/github/issues/{{YOUR_GITHUB_USERNAME}}/Hellmlops?color=56BEB8" /> -->
 
-  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/{{YOUR_GITHUB_USERNAME}}/hellopmlops?color=56BEB8" /> -->
+  <!-- <img alt="Github forks" src="https://img.shields.io/github/forks/{{YOUR_GITHUB_USERNAME}}/Hellmlops?color=56BEB8" /> -->
 
-  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/{{YOUR_GITHUB_USERNAME}}/hellopmlops?color=56BEB8" /> -->
+  <!-- <img alt="Github stars" src="https://img.shields.io/github/stars/{{YOUR_GITHUB_USERNAME}}/Hellmlops?color=56BEB8" /> -->
 </p>
 
 <!-- Status -->
 
 <!-- <h4 align="center"> 
-	🚧  Hellopmlops 🚀 Under construction...  🚧
+	🚧  Hellmlops 🚀 Under construction...  🚧
 </h4> 
 
 <hr> -->
@@ -81,7 +81,7 @@ $ helm install seldon-core seldon-core-operator \
 $ git clone https://github.com/HelloMLOps/mlflow-seldon-demo
 
 # Access
-$ cd hellopmlops
+$ cd Hellmlops
 
 # Install Helm chart
 $ helm install mlflow-seldon  ./mlflow-seldon
