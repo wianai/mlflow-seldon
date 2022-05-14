@@ -75,18 +75,7 @@ $ helm install seldon-core seldon-core-operator \
     --set istio.enabled=true \
     --namespace seldon-system
     
-# Setup Mlflow
-
-# Clone this project
-$ git clone https://github.com/HelloMLOps/mlflow-seldon-demo
-
-# Access
-$ cd hellopmlops
-
-# Install Helm chart
-$ helm install mlflow-seldon  ./mlflow-seldon
-
-#     or
+# Install Seldon Deployment
 
 $ helm repo add HelloMLOps https://HelloMLOps.github.io/helm-charts
 
@@ -111,16 +100,6 @@ Cron Job Picks up and Patches the Changes to Seldon Core
 ## :chains: How The flow Works
 
 <img width="1169" alt="Screenshot 2022-05-08 at 2 24 45 PM" src="https://user-images.githubusercontent.com/62284209/167296234-28e754ed-b17e-4afd-9da2-f7c877860375.png">
-
-## Values
-
-| Key | Type | Default | Description |
-|-----|------|---------|-------------|
-| seldon.mlflowmodelpath |  string | `""` | Initial Mlflow Model Path |
-| hook.MLFLOW_TRACKING_URI | string | `"http://mlflow-service.mlflow.svc.cluster.local:5000"` | Mlflow URI |
-| hook.MLFLOW_STAGE | string | `"Production"` | Stage To be Tracked From Mlflow  |
-| hook.DEPLOY_NAMESPACE | string | `"default"` | Model Namespace |
-| hook.MLFLOW_MODEL_NAME | string | `""` | Model Name |
 
 ## :memo: License ##
 

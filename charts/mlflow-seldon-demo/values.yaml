@@ -6,16 +6,6 @@ replicaCount: 1
 
 seldon:
   mlflowmodelpath: gs://hellomlops-mlflow/mlflow_artifacts/1/6887f98225b9419f9681d68e7cdd9335/artifacts/random-forest-model
-hook:
-  MLFLOW_TRACKING_URI: http://mlflow-service.mlflow.svc.cluster.local:5000
-  MLFLOW_STAGE: Production
-  DEPLOY_NAMESPACE: default
-  MLFLOW_MODEL_NAME: Iris
-  IMAGE: 
-  image:
-    repository: gcr.io/hellomlops-tests/mlflow-hook
-    pullPolicy: IfNotPresent
-    tag: "v2"
 
 
 imagePullSecrets: []
@@ -27,3 +17,13 @@ serviceAccount:
   annotations: {}
   name: ""
 
+mlflow:
+  enabled: true
+hook:
+  enabled: true
+  config:
+    MLFLOW_TRACKING_URI: http://mlflow-service.mlflow.svc.cluster.local:5000
+    MLFLOW_MODEL_NAME: Iris
+    MLFLOW_STAGE: Production
+    MLFLOW_DEPLOY_NAME: mlflow
+    DEPLOY_NAMESPACE: default
