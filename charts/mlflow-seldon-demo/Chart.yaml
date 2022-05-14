@@ -2,10 +2,6 @@ apiVersion: v2
 name: mlflow-seldon
 description: Helm Chart for mlflow seldon promotion
 dependencies:
-- condition: mlflow.enabled
-  name: hello-mlflow
-  repository: https://hellomlops.github.io/hello-mlflow/
-  version: 0.1.3
 - condition: hook.enabled
   name: mlflow-hook
   repository: https://hellomlops.github.io/mlflow-hook/

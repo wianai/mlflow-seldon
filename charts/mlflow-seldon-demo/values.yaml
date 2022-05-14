@@ -17,8 +17,6 @@ serviceAccount:
   annotations: {}
   name: ""
 
-mlflow:
-  enabled: true
 hook:
   enabled: true
   config:
