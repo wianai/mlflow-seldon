@@ -1,0 +1,28 @@
+apiVersion: v1
+entries:
+  mlflow-seldon:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-05-14T19:26:17.154194622Z"
+    dependencies:
+    - condition: hook.enabled
+      name: mlflow-hook
+      repository: https://hellomlops.github.io/mlflow-hook/
+      version: 0.1.0
+    description: Helm Chart for mlflow seldon promotion
+    digest: 61ae95d7258317e07e5f3b61cf1e05e42dd83273dcef9f59413aec93ab47552e
+    keywords:
+    - mlflow
+    - kubernetes
+    - machine-learning
+    - mlops
+    - seldon-core
+    name: mlflow-seldon
+    sources:
+    - https://github.com/HelloMLOps
+    - https://github.com/HelloMLOps/mlflow-seldon-demo
+    type: application
+    urls:
+    - https://github.com/HelloMLOps/mlflow-seldon-demo/releases/download/mlflow-seldon-0.1.3/mlflow-seldon-0.1.3.tgz
+    version: 0.1.3
+generated: "2022-05-14T19:26:17.154199922Z"
