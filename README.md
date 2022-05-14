@@ -74,8 +74,14 @@ $ helm install seldon-core seldon-core-operator \
     --set usageMetrics.enabled=true \
     --set istio.enabled=true \
     --namespace seldon-system
+# Setup Mlflow
+
+$ helm repo add hello-mlflow https://hellomlops.github.io/hello-mlflow/
+
+$ helm install hello-mlflow hello-mlflow/hello-mlflow
     
 # Install Seldon Deployment
+
 
 $ helm repo add HelloMLOps https://HelloMLOps.github.io/helm-charts
 
