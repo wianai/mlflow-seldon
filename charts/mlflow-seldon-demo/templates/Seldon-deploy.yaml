@@ -10,7 +10,7 @@ spec:
   - componentSpecs:
     - spec:
         containers:
-        - name: classifier
+        - name: wine-example
           livenessProbe:
             initialDelaySeconds: 800
             failureThreshold: 20000000
@@ -33,7 +33,6 @@ spec:
       children: []
       implementation: MLFLOW_SERVER
       modelUri: {{ .Values.seldon.mlflowmodelpath }}
-      name: classifier
-      serviceAccountName:  {{ include "mlflow-seldon.serviceAccountName" . }}
+      name: wine-example
     name: default
     replicas: {{ .Values.replicaCount }}

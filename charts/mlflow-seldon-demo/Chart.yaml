@@ -1,11 +1,12 @@
 apiVersion: v2
 name: mlflow-seldon
 description: Helm Chart for mlflow seldon promotion
-dependencies:
-- condition: hook.enabled
-  name: mlflow-hook
-  repository: https://hellomlops.github.io/mlflow-hook/
-  version: 0.1.0
+#dependencies:
+#- condition: hook.enabled
+#  name: mlflow-hook
+#  repository: https://wianai.github.io/mlflow-hook/
+#  version: 0.1.2
+
 keywords:
 - mlflow
 - kubernetes
@@ -14,8 +15,8 @@ keywords:
 - seldon-core
 
 sources:
-- https://github.com/HelloMLOps
-- https://github.com/HelloMLOps/mlflow-seldon-demo
+- https://github.com/wianai
+- https://github.com/wianai/mlflow-seldon-demo
 # A chart can be either an 'application' or a 'library' chart.
 #
 # Application charts are a collection of templates that can be packaged into versioned archives

@@ -5,8 +5,7 @@
 replicaCount: 1
 
 seldon:
-  mlflowmodelpath: gs://hellomlops-mlflow/mlflow_artifacts/1/6887f98225b9419f9681d68e7cdd9335/artifacts/random-forest-model
-
+  mlflowmodelpath: gs://hellomlops-prototype-mlflow/mlflow_artifacts/2/aab6375358da433180b5b2f78e128c3d/artifacts/model
 
 imagePullSecrets: []
 nameOverride: ""
@@ -21,7 +20,7 @@ hook:
   enabled: true
   config:
     MLFLOW_TRACKING_URI: http://mlflow-service.mlflow.svc.cluster.local:5000
-    MLFLOW_MODEL_NAME: Iris
+    MLFLOW_MODEL_NAME: ElasticnetWineModel
     MLFLOW_STAGE: Production
-    MLFLOW_DEPLOY_NAME: mlflow
+    MLFLOW_DEPLOY_NAME: wine-example
     DEPLOY_NAMESPACE: default
